@@ -1,0 +1,193 @@
+/*navigation menu*/
+nav {
+	margin: 27px auto 0;
+
+	position: relative;
+	width: 590px;
+	height: 50px;
+	background-color:white;
+	border-radius: 8px;
+	font-size: 0;
+}
+nav a {
+	line-height: 50px;
+	height: 100%;
+	font-size: 15px;
+	display: inline-block;
+	position: relative;
+	z-index: 1;
+	text-decoration: none;
+	text-transform: uppercase;
+	text-align: center;
+	color: Black;
+	cursor: pointer;
+}
+nav .animation {
+	position: absolute;
+	height: 100%;
+	top: 0;
+	z-index: 0;
+	transition: all .5s ease 0s;
+	border-radius: 8px;
+}
+a:nth-child(1) {
+	width: 100px;
+}
+a:nth-child(2) {
+	width: 110px;
+}
+a:nth-child(3) {
+	width: 100px;
+}
+a:nth-child(4) {
+	width: 160px;
+}
+a:nth-child(5) {
+	width: 120px;
+}
+nav .start-home, a:nth-child(1):hover~.animation {
+	width: 100px;
+	left: 0;
+	background-color: #eeedec;
+}
+nav .start-about, a:nth-child(2):hover~.animation {
+	width: 110px;
+	left: 100px;
+	background-color: #eeedec;
+}
+nav .start-blog, a:nth-child(3):hover~.animation {
+	width: 100px;
+	left: 210px;
+	background-color: #eeedec;
+}
+nav .start-portfolio, a:nth-child(4):hover~.animation {
+	width: 160px;
+	left: 310px;
+	background-color: #eeedec;
+}
+nav .start-contact, a:nth-child(5):hover~.animation {
+	width: 120px;
+	left: 470px;
+	background-color: #eeedec;
+}
+
+body {
+	font-size: 12px;
+	font-family: sans-serif;
+	background: transparent;
+}
+h1 {
+	text-align: center;
+	margin: 40px 0 40px;
+	font-size: 55px;
+	color:#Black;
+	font-family:KaiTi;
+
+}
+h2{
+  text-align: right;
+  font-size:25px;
+}
+p {
+    position: absolute;
+    bottom: 20px;
+    width: 100%;
+    text-align: center;
+    color: #ecf0f1;
+    font-family: 'Cherry Swash',cursive;
+    font-size: 16px;
+}
+
+span {
+    color: #2BD6B4;
+}
+
+/*positoning for heading on index.html*/
+.text-block {
+ position: absolute;
+ top: 80px;
+ right: 80px;
+
+ color: Black;
+ padding-left: 20px;
+ padding-right: 20px;
+}
+
+
+ .aboutmepage {
+  width: 500px;
+  border: 0.5px solid Black;
+	background-color: light grey;
+  padding: 40px;
+  margin: 50px;
+	position: absolute;
+	right: 0;
+	height: 260px;
+	top:210px;
+	font-size:15px;
+	text-align: center;
+}
+
+.container_1{
+	width: 1100px;
+	top:1800px;
+	height:1600px;
+	margin: 50px;
+
+}
+
+
+/* Bottom left text */
+.bottom-left {
+  position: absolute;
+  bottom: -300px;
+  left: 16px;
+	font-size: 25px;
+	font:'Cherry Swash';
+
+}
+/* Container holding the image and the text */
+.Contactform {
+ position: relative;
+}
+
+
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+ width: 100%; /* Full width */
+ padding: 12px; /* Some padding */
+ border: 1px solid #ccc; /* Gray border */
+ border-radius: 4px; /* Rounded borders */
+ box-sizing: border-box; /* Make sure that padding and width stays in place */
+ margin-top: 6px; /* Add a top margin */
+ margin-bottom: 16px; /* Bottom margin */
+ resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+ background-color: #808080;
+ color: white;
+ padding: 12px 20px;
+ border: none;
+ border-radius: 4px;
+ cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker green color */
+input[type=submit]:hover {
+ background-color:#000000;
+}
+
+/* Add a background color and some padding around the form */
+.contactformbox {
+ border-radius: 5px;
+ background-color: #f2f2f2;
+ padding: 20px;
+}
+
+
+img {
+ -webkit-filter: grayscale(100%);
+ filter: grayscale(100%);
+}
